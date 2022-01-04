@@ -20,6 +20,15 @@
                 }
             }
         }
+        module.exports = {
+            theme: {
+                extend: {
+                    width: {
+                        '128': '400px',
+                    }
+                }
+            }
+        }
     </script>
 </head>
 
@@ -29,18 +38,18 @@
         <div class="w-full h-screen  bg-cheat   ">
 
             <div class="flex  justify-center">
-                <div class="w-4/5 flex h-16 items-center  justify-between">
-                    <div class="w-auto w-1/4 bg-gray-900 flex">
+                <div class="w-4/5 absolute flex h-16 items-center  justify-between">
+                    <div class="w-auto w-1/4  flex">
                         <h1 class="text-base cursor-pointer text-metl font-medium">BOOK A GAME</h1>
                         <h1 class="text-base cursor-pointer text-metl font-medium ml-3">VIEW ALL MEMBERS</h1>
                     </div>
                     <div class="w-auto">
                         <img class="cursor-pointer" src="Gambito.png">
                     </div>
-                    <div class="flex w-1/4 bg-gray-900 w-auto items-center">
-                        <h1 class="mr-3 cursor-pointer text-base text-metl font-medium">LOG IN </h1>
+                    <div class="flex w-1/4  relative w-auto items-center">
+                        <h1 class="mr-3 cursor-pointer absolute right-36 text-base text-metl font-medium">LOG IN </h1>
                         <button
-                            class="w-32 h-8 text-base cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-clifford">SIGN
+                            class="w-32 h-8 text-base absolute right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-clifford">SIGN
                             UP</button>
                     </div>
 
@@ -57,17 +66,38 @@
 
 
 
-            <div class="   mt-24  text-center justify-center ">
-                <h1 class="  text-7xl text-choga font-semibold">LOGIN</h1>
-                <h1 class="mt-7 underline  underline-offset-2 font-medium decoration-2 text-sham">SIGN UP</h1>
+            <div class=" w-full  mt-24  text-center justify-center ">
+                <h1 class="  text-6xl text-choga font-semibold">LOGIN</h1>
+                <h1 class="mt-7 underline  underline-offset-2  cursor-pointer font-medium decoration-2 text-sham">
+                    SIGN UP</h1>
             </div>
 
 
 
 
 
-            <div class="w-full "></div>
+            <div class="w-full mt-7 flex justify-center  ">
+                <div class="bg-white shadow-2xl pl-10 pr-10 pt-7 pb-7 rounded-3xl w-[400px]">
+                    <div class="relative">
+                        <h1 class="text-lg text-choga font-semibold">USERNAME</h1>
+                        <input class="border-2 mt-3 h-10  rounded-md w-full" type="text">
+                        <p class="absolute text-sham underline mt-2 right-0">Forgot Your username?</p>
+                    </div>
 
+
+                    <div class="relative mt-12">
+                        <h1 class="text-lg text-choga font-semibold">PASSWORD</h1>
+                        <input class="border-2 mt-3 h-10  rounded-md w-full" type="text">
+                        <p class="absolute text-sham underline mt-2 right-0">Forgot Your Password ?</p>
+                    </div>
+
+                    <div class="mt-14">
+                        <img class="cursor-pointer" src="Group 1.png">
+                    </div>
+
+
+                </div>
+            </div>
 
 
         </div>
