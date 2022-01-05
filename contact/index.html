@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary_blue: '#0F165C',
+                        low_opacity: '#ffffffea',
+                        primary_dark: '#3D3D3D',
+                        primary_purple: '#A250B4',
+
+
+
+                    }
+                }
+            }
+        }
+        module.exports = {
+            theme: {
+                extend: {
+                    width: {
+                        '128': '400px',
+
+                    },
+                    height: {
+                        '128': 'calc(100vh - 4rem)',
+                    }
+                }
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <div class="flex absolute top-0 w-full justify-center">
+        <div class="w-4/5  flex h-16 items-center  justify-between">
+            <div class="w-auto w-2/5  flex">
+                <h1 class="text-base cursor-pointer text-primary_dark font-medium">BOOK A GAME</h1>
+                <h1 class="text-base cursor-pointer text-primary_dark font-medium ml-3">VIEW ALL MEMBERS</h1>
+            </div>
+            <div class="w-auto">
+                <img class="cursor-pointer" src="Gambito.png">
+            </div>
+            <div class="flex w-2/5  relative w-auto items-center">
+                <h1 class="mr-3 cursor-pointer absolute right-36 text-base text-primary_dark font-medium">LOG IN
+                </h1>
+                <button
+                    class="w-32 h-8 text-base absolute right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
+                    UP</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="  h-screen flex items-center justify-center flex-col w-full top-36  ">
+
+        <div>
+            <h1 class="text-6xl text-center font-medium text-primary_dark">CONTACT US</h1>
+            <div class=" text-center">
+                <p class="mt-10 text-lg font-medium ">Feugiat venenatis, imperdiet neque lacus sollicitudin. Amet,
+                    cursus
+                    <br> mauris mauris pellentesque quis.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div>
+
+            <div class="mt-10 sm flex">
+                <div class="">
+                    <h1>First name</h1>
+                    <input class="border-2 h-12 mt-3 rounded-xl" type="text">
+                </div>
+                <div class=" ml-10">
+                    <h1>Last name</h1>
+                    <input class="border-2 h-12 mt-3 rounded-xl" type="text">
+                </div>
+
+            </div>
+
+
+
+              <div class="mt-10">
+                  <h1>business Email</h1>
+                  <input class="h-12 mt-3 rounded-xl w-full border-2 " type="text">
+              </div>
+
+              <div class="mt-10">
+                <h1>Are You A</h1>
+                <input   placeholder="Select one...  "  class="pl-5 h-12 mt-3 rounded-xl w-full border-2 " type="text">
+            </div>
+
+
+<div class="flex justify-center ">
+    <button class="h-10 w-40 rounded-3xl mt-10 text-white bg-gradient-to-r from-primary_blue to-primary_purple">SIGN UP</button>
+</div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
