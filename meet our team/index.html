@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary_blue: '#0F165C',
+                        low_opacity: '#ffffffea',
+                        primary_dark: '#3D3D3D',
+                        primary_purple: '#A250B4',
+
+
+
+                    }
+                }
+            }
+        }
+        module.exports = {
+            theme: {
+                extend: {
+                    width: {
+                        '128': '400px',
+
+                    },
+                    height: {
+                        '128': 'calc(100vh - 4rem)',
+                    },
+                    left: {
+                        '128': '-20rem',
+                    }
+
+                }
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="flex absolute top-0 w-full justify-center">
+        <div class="w-4/5  flex h-16 items-center  justify-between">
+            <div class="w-auto w-2/4 lg:w-2/5 lg:flex   lg:block hidden justify-around">
+                <h1 class="text-sm lg:text-base cursor-pointer text-primary_dark whitespace-nowrap  font-medium">BOOK A
+                    GAME</h1>
+                <h1 class="text-sm lg:text-base cursor-pointer text-primary_dark whitespace-nowrap font-medium ">VIEW
+                    ALL MEMBERS</h1>
+            </div>
+            <div class="w-auto">
+                <img class="cursor-pointer" src="Gambito.png">
+            </div>
+            <div class="hidden w-2/4 lg:w-2/5 lg:flex lg:block justify-around  w-auto items-center">
+                <h1
+                    class="mr-3 cursor-pointer  right-36 text-sm lg:text-base text-primary_dark whitespace-nowrap font-medium">
+                    LOG IN
+                </h1>
+                <button
+                    class="w-32 h-8 text-base  right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
+                    UP</button>
+            </div>
+            <div class="block lg:hidden">
+                <ion-icon onclick="openNav()" class="text-4xl cursor-pointer" name="menu-outline"></ion-icon>
+            </div>
+
+            <div id="mySidebar"
+                class="  transition-all block absolute pl-10 h-screen bg-gray-900 text-left w-80 left-[-20rem]  top-0 lg:hidden">
+                <ion-icon onclick="closeNav()" class=" absolute cursor-pointer right-10 text-4xl mt-4 text-white"
+                    name="close-outline"></ion-icon>
+                <h1 class="text-xl mt-36  cursor-pointer text-white whitespace-nowrap  font-medium">BOOK A GAME</h1>
+                <h1 class="text-xl mt-10  cursor-pointer text-white whitespace-nowrap  font-medium">VIEW ALL MEMBERS
+                </h1>
+                <h1 class="text-xl mt-10  cursor-pointer text-white whitespace-nowrap  font-medium">LOG IN</h1>
+                <button
+                    class="w-56 h-14 text-base  mt-10 right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
+                    UP</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="w-full flex flex-col-reverse lg:mt-[0px] mt-[500px] lg:flex lg:flex-row justify-center h-screen ">
+
+        <div class="h-screen flex  w-full lg:mt-[0px] mt-[-300px]  lg:w-2/4 ">
+            <div class="h-screen flex items-center w-full ">
+                <div class="w-full h-96 lg:text-left text-center  xl:pl-[27%] pl-  lg:pl-[10%] ">
+                    <h1 class=" text-2xl xl:w-[40%]  text-primary_dark">Lorem Ipsum is simply
+                        dummy text</h1>
+                    <h1 class="mt-11 text-6xl w-auto text-primary_dark">Lorem Ipsum
+                        in the industry</h1>
+                    <button
+                        class="mt-11 w-56 h-12 bg-gradient-to-r from-primary_blue to-primary_purple rounded-3xl text-white">GET
+                        STARTED </button>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div class=" w-full lg:w-2/4  h-screen">
+            <div class="w-[100%]  overflow-hidden flex items-center h-screen ">
+                <div class=" w-full   flex pt-14  h-[800px]">
+
+                    <div class="">
+                        <img class=" h-[600px] w-[300px]" src="men.png">
+                        <h1 class="text-primary_dark mt-5">DR JHON KAG</h1>
+                        <h1 class="mt-2">TEACHER</h1>
+                    </div>
+                    <div class="xl:pl-7  pl-3">
+                        <img class=" mt-[70px] h-[600px] w-[300px]" src="gil.png">
+                        <h1 class="text-primary_dark mt-5">MR CHARTIER</h1>
+                        <h1 class="mt-2">STUDENT</h1>
+                    </div>
+                    <div class="xl:pl-7  pl-3 ">
+                        <img class=" h-[600px] w-[300px]" src="men1.png">
+                        <h1 class="text-primary_dark mt-5">MONICA THEI</h1>
+                        <h1 class="mt-2">STUDENT</h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0rem";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-20rem";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
