@@ -44,20 +44,39 @@
 
     <div class="flex absolute top-0 w-full justify-center">
         <div class="w-4/5  flex h-16 items-center  justify-between">
-            <div class="w-auto w-2/5  flex">
-                <h1 class="text-base cursor-pointer text-primary_dark font-medium">BOOK A GAME</h1>
-                <h1 class="text-base cursor-pointer text-primary_dark font-medium ml-3">VIEW ALL MEMBERS</h1>
+            <div class="w-auto w-2/4 lg:w-2/5 lg:flex   lg:block hidden justify-around">
+                <h1 class="text-sm lg:text-base cursor-pointer text-primary_dark whitespace-nowrap  font-medium">BOOK A
+                    GAME</h1>
+                <h1 class="text-sm lg:text-base cursor-pointer text-primary_dark whitespace-nowrap font-medium ">VIEW
+                    ALL MEMBERS</h1>
             </div>
             <div class="w-auto">
                 <img class="cursor-pointer" src="Gambito.png">
             </div>
-            <div class="flex w-2/5  relative w-auto items-center">
-                <h1 class="mr-3 cursor-pointer absolute right-36 text-base text-primary_dark font-medium">LOG IN
+            <div class="hidden w-2/4 lg:w-2/5 lg:flex lg:block justify-around  w-auto items-center">
+                <h1
+                    class="mr-3 cursor-pointer  right-36 text-sm lg:text-base text-primary_dark whitespace-nowrap font-medium">
+                    LOG IN
                 </h1>
                 <button
-                    class="w-32 h-8 text-base absolute right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
-                    UppP</button>
+                    class="w-32 h-8 text-base  right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
+                    UP</button>
             </div>
+            <div class="block lg:hidden">
+                <ion-icon onclick="openNav()" class="text-4xl cursor-pointer" name="menu-outline"></ion-icon>
+            </div>
+
+            <div id="mySidebar" class=" transition-all block absolute pl-10 h-screen bg-gray-900 text-left w-80 left-0  top-0 lg:hidden">
+                <ion-icon onclick="closeNav()" class=" absolute cursor-pointer right-10 text-4xl mt-4 text-white" name="close-outline"></ion-icon>
+                <h1 class="text-xl mt-36  cursor-pointer text-white whitespace-nowrap  font-medium">BOOK A GAME</h1>
+                <h1 class="text-xl mt-10  cursor-pointer text-white whitespace-nowrap  font-medium">VIEW ALL MEMBERS
+                </h1>
+                <h1 class="text-xl mt-10  cursor-pointer text-white whitespace-nowrap  font-medium">LOG IN</h1>
+                <button
+                    class="w-56 h-14 text-base  mt-10 right-0 cursor-pointer rounded-l-3xl rounded-r-3xl font-medium text-white  bg-primary_blue">SIGN
+                    UP</button>
+            </div>
+
 
         </div>
 
@@ -66,48 +85,50 @@
 
     <div class="  h-screen flex items-center justify-center flex-col w-full top-36  ">
 
-        <div>
+        <div class="p-12">
             <h1 class="text-6xl text-center font-medium text-primary_dark">CONTACT US</h1>
             <div class=" text-center">
                 <p class="mt-10 text-lg font-medium ">Feugiat venenatis, imperdiet neque lacus sollicitudin. Amet,
                     cursus
-                    <br> mauris mauris pellentesque quis.
+                    mauris mauris pellentesque quis.
                 </p>
             </div>
         </div>
 
 
 
-        <div>
+        <div class="w-full sm:w-auto sm:p-0   p-10">
 
-            <div class="mt-10 sm flex">
+            <div class="mt- sm:mt-2  sm:flex  flex-col  sm:flex-row  flex">
                 <div class="">
                     <h1>First name</h1>
-                    <input class="border-2 h-12 mt-3 rounded-xl" type="text">
+                    <input class="border-2 h-12 mt-3 w-full rounded-xl" type="text">
                 </div>
-                <div class=" ml-10">
+                <div class=" sm:ml-10 sm:mt-0 mt-10 ml-0">
                     <h1>Last name</h1>
-                    <input class="border-2 h-12 mt-3 rounded-xl" type="text">
+                    <input class="border-2 h-12 mt-3 w-full rounded-xl" type="text">
                 </div>
 
             </div>
 
 
 
-              <div class="mt-10">
-                  <h1>business Email</h1>
-                  <input class="h-12 mt-3 rounded-xl w-full border-2 " type="text">
-              </div>
+            <div class="mt-10">
+                <h1>business Email</h1>
+                <input class="h-12 mt-3 rounded-xl w-full border-2 " type="text">
+            </div>
 
-              <div class="mt-10">
+            <div class="mt-10">
                 <h1>Are You A</h1>
-                <input   placeholder="Select one...  "  class="pl-5 h-12 mt-3 rounded-xl w-full border-2 " type="text">
+                <input placeholder="Select one...  " class="pl-5 h-12 mt-3 rounded-xl w-full border-2 " type="text">
             </div>
 
 
-<div class="flex justify-center ">
-    <button class="h-10 w-40 rounded-3xl mt-10 text-white bg-gradient-to-r from-primary_blue to-primary_purple">SIGN UP</button>
-</div>
+            <div class="flex justify-center ">
+                <button
+                    class="h-10 w-40 rounded-3xl mt-10 text-white bg-gradient-to-r from-primary_blue to-primary_purple">SIGN
+                    UP</button>
+            </div>
 
 
 
@@ -121,7 +142,15 @@
 
 
 
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0rem";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidebar").style.left ="-20rem";
+        }
+    </script>
 
 
 
